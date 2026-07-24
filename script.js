@@ -44,7 +44,7 @@ const stops = [
     tone: "#b8a8f6",
 
     // ✨ EDITA AQUÍ EL TEXTO DE LA PARADA DE LA CAMA
-    text: "La ultima parada antes del gran final, mi lugar seguro, eso es lo que eres tu, ese lugar donde puedo estar en paz, donde me encanta estar, a pesar de las peleitas y demas, eso es superficial, lo que realmente importa eres tu, eres ese lugar donde a pesar de todo puedo estar en paz, donde no haya ni un dia donde no este en paz, al final del dia, mi amor por ti siempre es mas grande que cualquier cosa, tu eres mi vida y mi mundo y quiero que tengas eso siempre presente mi vida <3.",
+    text: "La ultima parada antes del gran final, mi lugar seguro, eso es lo que eres tu, ese lugar donde puedo estar en paz, donde me encanta estar, a pesar de las peleitas y demas, eso es superficial, lo que realmente importa eres tu, eres ese lugar donde a pesar de todo puedo estar en paz, donde no haya ni un dia donde no este en paz al final del dia",
   },
 ];
 
