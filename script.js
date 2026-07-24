@@ -10,7 +10,7 @@ const stops = [
   {
     id: "videojuegos",
     kicker: "Parada 01",
-    title: "Nuestro modo historia",
+    title: "Nuestra Historia",
     icon: "🎮",
     image: "photos/parada-videojuegos.png",
     lat: -24,
@@ -18,12 +18,12 @@ const stops = [
     tone: "#f2b56f",
 
     // ✨ EDITA AQUÍ EL TEXTO DE LA PARADA DEL CONTROL
-    text: "Escribe aquí el recuerdo, la historia o el mensaje que quieras relacionar con los videojuegos.",
+    text: "Una vez más, un mes mas, y una historia inmensa por delante, eso es lo que tenemos tu y yo, una historia que se que será la mejor historia que alguien pueda contar en la vida, y esa historia que no se encuentran 2 veces en una misma vida.",
   },
   {
     id: "hamburguesa",
     kicker: "Parada 02",
-    title: "Nuestros antojos",
+    title: "Nuestros Sueños",
     icon: "🍔",
     image: "photos/parada-hamburguesa.jpg",
     lat: 8,
@@ -31,7 +31,7 @@ const stops = [
     tone: "#ff987c",
 
     // ✨ EDITA AQUÍ EL TEXTO DE LA PARADA DE LA HAMBURGUESA
-    text: "Escribe aquí algo sobre sus comidas favoritas, una salida especial o ese antojo que siempre comparten.",
+    text: "Nuestras salidas son lo maximo, extraño salir contigo, te extraño a ti, recuerdo nuestras primeras salidas, muy hermosas y divertidas, quiero tener mas salidas asi unicas, hermosas y preciosas contigo, que nuestras salidas nunca acaben, quiero conocer el mundo contigo, quiero que seas mi compañera de viaje para todos lados, mi compañera de viaje.",
   },
   {
     id: "descanso",
@@ -44,7 +44,7 @@ const stops = [
     tone: "#b8a8f6",
 
     // ✨ EDITA AQUÍ EL TEXTO DE LA PARADA DE LA CAMA
-    text: "Escribe aquí un mensaje tranquilo y bonito: un lugar donde descansar, reír y sentirte en casa.",
+    text: "La ultima parada antes del gran final, mi lugar seguro, eso es lo que eres tu, ese lugar donde puedo estar en paz, donde me encanta estar, a pesar de las peleitas y demas, eso es superficial, lo que realmente importa eres tu, eres ese lugar donde a pesar de todo puedo estar en paz, donde no haya ni un dia donde no este en paz, al final del dia, mi amor por ti siempre es mas grande que cualquier cosa, tu eres mi vida y mi mundo y quiero que tengas eso siempre presente mi vida <3.",
   },
 ];
 
