@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08051f" />
+    <title>El Mundo de Josué</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="dream-page" id="dreamPage">
+      <section class="intro-gate" id="introGate" aria-label="Portada">
+        <div class="intro-nebula intro-nebula-one"></div>
+        <div class="intro-nebula intro-nebula-two"></div>
+        <div class="intro-cosmos" aria-hidden="true">
+          <span class="intro-planet intro-planet-ringed"><i></i></span>
+          <span class="intro-planet intro-planet-violet"></span>
+          <span class="intro-planet intro-planet-rose"></span>
+          <span class="intro-galaxy"></span>
+          <span class="intro-comet intro-comet-one"></span>
+          <span class="intro-comet intro-comet-two"></span>
+        </div>
+        <div class="intro-stars"></div>
+        <div class="intro-orbit" aria-hidden="true"><span></span></div>
+        <div class="intro-mini-world" aria-hidden="true"><div></div></div>
+
+        <div class="intro-content">
+          <p class="intro-kicker">
+            <span>✦</span> Una aventura hecha con amor <span>✦</span>
+          </p>
+          <h1>
+            Bienvenido al mundo
+            <span>de Josué</span>
+          </h1>
+          <p>
+            Hay un universo de momentos esperando por ti. Gíralo, recórrelo
+            y descubre lo que guarda en su corazón.
+          </p>
+          <button id="startButton" type="button">
+            <span>Iniciar el viaje</span>
+            <i>→</i>
+          </button>
+        </div>
+        <p class="intro-footer">Hecho para una persona inmensamente especial ♡</p>
+      </section>
+
+      <div class="deep-space" aria-hidden="true">
+        <span class="nebula-ribbon nebula-ribbon-one"></span>
+        <span class="nebula-ribbon nebula-ribbon-two"></span>
+        <span class="far-planet planet-ringed">
+          <i class="planet-ring"></i>
+          <i class="planet-glow"></i>
+        </span>
+        <span class="far-planet planet-amethyst"><i class="planet-glow"></i></span>
+        <span class="far-planet planet-ocean"><i class="planet-glow"></i></span>
+        <span class="far-planet planet-coral"></span>
+        <span class="galaxy-arc"></span>
+        <span class="star-cluster star-cluster-left"></span>
+        <span class="star-cluster star-cluster-right"></span>
+      </div>
+
+      <div class="sky-glow sky-glow-one"></div>
+      <div class="sky-glow sky-glow-two"></div>
+      <div class="stars" aria-hidden="true"></div>
+      <div class="orbit orbit-one" aria-hidden="true"></div>
+      <div class="orbit orbit-two" aria-hidden="true"></div>
+      <div class="space-dust" id="spaceDust" aria-hidden="true"></div>
+      <div class="shooting-star shooting-star-one" aria-hidden="true"></div>
+      <div class="shooting-star shooting-star-two" aria-hidden="true"></div>
+      <div class="shooting-star shooting-star-three" aria-hidden="true"></div>
+      <div class="shooting-star shooting-star-four" aria-hidden="true"></div>
+      <div class="shooting-star shooting-star-five" aria-hidden="true"></div>
+      <div class="small-moon moon-left" aria-hidden="true"></div>
+      <div class="small-moon moon-right" aria-hidden="true"></div>
+
+      <header class="world-hud">
+        <div class="hud-brand">
+          <span>J</span>
+          <div>
+            <small>Explorando</small>
+            <strong>El mundo de Josué</strong>
+          </div>
+        </div>
+        <div class="journey-status" aria-label="Progreso del recorrido">
+          <span id="progressText">0/3 recuerdos descubiertos</span>
+          <div class="progress-track"><span id="progressBar"></span></div>
+        </div>
+      </header>
+
+      <section class="world-zone" aria-label="Mundo interactivo">
+        <div class="cosmic-cloud cloud-left" aria-hidden="true"></div>
+        <div class="cosmic-cloud cloud-right" aria-hidden="true"></div>
+
+        <div
+          class="globe-stage"
+          id="globeStage"
+          role="application"
+          aria-label="Globo de Josué. Arrastra para girarlo."
+          tabindex="0"
+        >
+          <div class="globe-shadow"></div>
+          <div class="atmosphere atmosphere-outer"></div>
+          <div class="atmosphere atmosphere-inner"></div>
+
+          <div class="globe" id="globe">
+            <div class="ocean-depth"></div>
+            <div class="planet-texture"></div>
+            <div class="globe-grid"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="cloud-belt"></div>
+            <div class="globe-gloss"></div>
+            <div class="night-side"></div>
+          </div>
+
+          <div id="stopsLayer"></div>
+        </div>
+
+        <div class="world-controls">
+          <button id="turnLeft" type="button" aria-label="Girar el mundo a la izquierda">↶</button>
+          <p id="dragHint">
+            <span class="drag-symbol">↔</span>
+            <span id="dragText">Arrastra para darle la vuelta</span>
+          </p>
+          <button id="turnRight" type="button" aria-label="Girar el mundo a la derecha">↷</button>
+        </div>
+
+        <p class="world-note">
+          Hay recuerdos alrededor de todo el mundo
+          <span>•</span>
+          gira para encontrarlos
+        </p>
+      </section>
+
+      <footer>
+        <span>J + ♡</span>
+        <p>Un mundo entero para alguien inmensamente especial.</p>
+      </footer>
+
+      <div
+        class="memory-overlay"
+        id="memoryOverlay"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="memoryTitle"
+        hidden
+      >
+        <article class="memory-card">
+          <button class="close-button" id="memoryClose" type="button" aria-label="Cerrar recuerdo">×</button>
+          <div class="memory-photo-wrap">
+            <div class="photo-tape tape-left"></div>
+            <div class="photo-tape tape-right"></div>
+            <img id="memoryImage" src="" alt="" />
+            <span class="photo-shine"></span>
+          </div>
+          <div class="memory-content">
+            <p id="memoryKicker"></p>
+            <h2 id="memoryTitle"></h2>
+            <div class="gold-line"></div>
+            <p class="editable-copy" id="memoryText"></p>
+            <span class="memory-sign">Un rincón de nuestro mundo ♡</span>
+          </div>
+          <span class="card-icon" id="memoryIcon" aria-hidden="true"></span>
+        </article>
+      </div>
+
+      <div class="finale" id="finale" role="dialog" aria-modal="true" hidden>
+        <div class="finale-sky"></div>
+        <div class="pink-world" aria-hidden="true">
+          <div class="pink-world-map"></div>
+          <div class="pink-world-clouds"></div>
+          <div class="pink-world-lines"></div>
+          <div class="pink-world-light"></div>
+        </div>
+        <div class="finale-vignette"></div>
+        <div class="heart-rain" id="heartRain" aria-hidden="true"></div>
+        <div class="burst" id="heartBurst" aria-hidden="true">
+          <span class="explosion-core">♥</span>
+        </div>
+
+        <button class="final-close" id="finalClose" type="button" aria-label="Cerrar el gran final">
+          Volver al mundo <span>×</span>
+        </button>
+
+        <section class="final-message">
+          <p class="final-kicker"><span>✦</span> El centro de mi universo <span>✦</span></p>
+          <h2>Siempre has <span>estado tú</span></h2>
+          <div class="final-photo-wrap">
+            <div class="final-halo halo-one"></div>
+            <div class="final-halo halo-two"></div>
+            <div class="final-photo">
+              <img src="photos/show-final.png" alt="Nuestro comienzo" />
+            </div>
+            <span class="photo-caption">donde todo comenzó ♡</span>
+          </div>
+
+          <!-- ✨ EDITA AQUÍ EL TEXTO DEL GRAN FINAL ✨ -->
+          <p class="final-copy">
+            Escribe aquí tu mensaje final. Este es el lugar para contar por qué
+            esta foto, esta historia y esta persona viven en el corazón de tu mundo.
+          </p>
+
+          <span class="signature">Con todo mi corazón, para siempre ♡</span>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
